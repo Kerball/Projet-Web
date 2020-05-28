@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
+    color: rgb(153, 96, 42);
     text-align: center;
 }
 
@@ -9,6 +9,7 @@ nav ul {
     width: fit-content;
     min-width: 100%;
     padding: 0;
+    display: flex;
 }
 
 nav li {
@@ -20,8 +21,8 @@ nav li {
     float: left;
     line-height: 5em;
     text-align: center;
-    background-color: rgb(12, 19, 34);
-    box-shadow: 0px 5px 0px rgb(172, 8, 8), 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
+    background-color: rgb(124, 78, 19);
+    box-shadow: 0px 5px 0px rgb(31, 29, 29), 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
     /*box-shadow: 0px 0px 5px 2px #BDBDBD;*/
 }
 
@@ -68,7 +69,7 @@ nav li ul li a {
 }
 
 #navbar a.active {
-    background-color: rgb(161, 19, 0);
+    background-color: rgb(161, 107, 19);
     color: white;
 }
 
@@ -92,7 +93,7 @@ nav li ul li a {
 }
 
 .backgroundcolor {
-    background-color: rgb(31, 35, 42);
+    background-color: rgb(243, 243, 233);
 }
 
 .footer {
