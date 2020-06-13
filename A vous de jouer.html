@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Src/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Summoners war guide</title>
+</head>
+
+<body class="back">
+
+    <header>
+        <h1>Summoners war guide</h1>
+    </header>
+
+    <div id="navbar">
+
+        <nav class="content_tuto">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+
+                <li><a>Monstres</a>
+                    <ul>
+                        <li><a href="SRC/Eau.html">Eau</a></li>
+                        <li><a href="SRC/Feu.html">Feu</a></li>
+                        <li><a href="SRC/Vent.html">Vent</a></li>
+                        <li><a href="SRC/Lumiere.html">Lumiere</a></li>
+                        <li><a href="SRC/Tenebre.html">Tenebre</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="Stratégie.html">Stratégie</a></li>
+                <li><a class="active">A vous de jouer !</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="milieu">
+
+        <h3>Etes vous sûrs bien de connaître l'univers de Pokémon ? <em><br>VERIFIEZ CELA AVEC NOTRE QCM CI-DESSOUS !! :) </em> </h3>
+
+
+        <h3>1) Qui est le dresseur de Pikachu ? :</h3>
+
+        <form name="QCM">
+            <input type="radio" name="choix" value="choix1" />Pierre
+            <input type="radio" name="choix" value="choix2" />Sacha
+            <input type="radio" name="choix" value="choix3" />Ondin
+
+
+
+            <h3>2) Qui est l'équipe ennemie de Pokémon ? :</h3>
+
+            <input type="radio" name="choix1" value="choix4" />Team Rocket
+            <input type="radio" name="choix1" value="choix5" />La ligue Indingo
+            <input type="radio" name="choix1" value="choix6" />Gryffondor
+
+
+
+            <h3>3) Combien d'espèces existent-t-ils chez les Pokémons ? :</h3>
+
+            <input type="radio" name="choix2" value="choix7" />819
+            <input type="radio" name="choix2" value="choix8" />879
+            <input type="radio" name="choix2" value="choix9" />850
+
+
+
+            <h3>4) Combien d'exemplaires pour les versions bleues et jaunes du jeu-vidéo Pokémon ont été vendus ? :</h3>
+
+            <input type="radio" name="choix3" value="choix10" />12 000 000
+            <input type="radio" name="choix3" value="choix11" />870 060
+            <input type="radio" name="choix3" value="choix12" />31 000 000
+
+
+
+            <h3>5) Dans quelle saison Sacha était-il accompagné par Serena, Lem et Clem ? :</h3>
+
+            <input type="radio" name="choix4" value="choix13" />Saison 6
+            <input type="radio" name="choix4" value="choix14" />Saison 17
+            <input type="radio" name="choix4" value="choix15" />Saison 22
+
+            <h3>6) De combien de %, l'action de NINTENDO a-t-elle augmenté grace à Pokemon GO ? :</h3>
+
+            <input type="radio" name="choix5" value="choix16" />88.9
+            <input type="radio" name="choix5" value="choix17" />91.7
+            <input type="radio" name="choix5" value="choix18" />93.2
+
+            <h3>7)Quelle est le nom de la région ou est implémenté la eme génération 6? :</h3>
+
+            <input type="radio" name="choix6" value="choix19" />Kalos
+            <input type="radio" name="choix6" value="choix20" />Unis
+            <input type="radio" name="choix6" value="choix21" />Sinnoh
+
+            <h3>8)Comment fais-t-on pour avoir un Milobellus ? :</h3>
+
+            <input type="radio" name="choix7" value="choix22" />Une évolution simple
+            <input type="radio" name="choix7" value="choix23" />En échangeant Barpaud(portant une Bel'Écaille)
+            <input type="radio" name="choix7" value="choix24" />En faisant monter la beauté de Barpaud puis l'évoluer
+
+
+            <br><br><input type="button" class="button" value="Valider" onclick="tester(this.form.choix7,this.form.choix6,this.form.choix5,this.form.choix4, this.form.choix3, this.form.choix2, this.form.choix1, this.form.choix)" />
+        </form>
+
+    </br>
+
+        <div >Correction :</div>
+        <div id="text"></div>
+        
+        <script type="text/javaScript">
+        
+        
+        
+        function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+        {
+            document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+        }
+        function ajouterText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+        {
+            document.getElementById("text").innerHTML += texte; // "text" étant l'id te ta balise qui contient le texte.
+        }
+        
+        function tester(reponse8,reponse7,reponse6,reponse5, reponse4, reponse3, reponse2 , reponse)// une fonction que l'on appellera pour tester le formulaire
+        {
+            if (reponse8[1].checked && reponse7[0].checked && reponse6[2].checked && reponse5[1].checked && reponse4[2].checked && reponse3[0].checked && reponse2[0].checked && reponse[1].checked)
+            {	
+                modifierText("REPONSES TOUS CORRECTES ! ");
+            } else {
+                modifierText("Mauvaise(s) réponse(s): ");
+                if (!reponse[1].checked ) {
+                    ajouterText("<br>Q1:Le dresseur de Pikachu est bien le célébre Sacha. ");
+                }
+                if (!reponse2[0].checked) {
+                    ajouterText("<br>Q2:Les grands méchants des Pokémon est la Team Rocket. ");
+                }
+                if (!reponse3[0].checked) {
+                    ajouterText("<br>Q3:Il y a 819 espèces précisement chez les Pokémons ! ");
+                }
+                if (!reponse4[2].checked) {
+                    ajouterText("<br>Q4:Le nombre d'exemplaires vendus est de... 31 000 000 !! ");
+                }
+                if (!reponse5[1].checked) {
+                    ajouterText("<br>Q5:C'est dans la saison 17 que Sacha était accompagné par Serena, Lem et Clem ");
+                }
+                if (!reponse6[2].checked) {
+                    ajouterText("<br>Q6:L'action de NINTENDO a augmenter à hauteur de 93.2% ");
+                }
+                if (!reponse7[0].checked) {
+                    ajouterText("<br>Q7: C'est bien sur Kalos et qui plus est, s'inspire de la France");
+                }
+                if (!reponse8[1].checked) {
+                    ajouterText("<br>Q8: Depuis la cinquième génération il est seulement possible de l'évoluer grace à l'échange");
+                }
+                /*modifierText("Mauvaise(s) réponse(s): Le dresseur de Pikachu est bien le célébre Sacha. Les grands méchants des Pokémon est la Team Rocket.");*/
+            }
+            return false;
+        }
+
+        
+
+        
+        </script>
+
+    </div>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

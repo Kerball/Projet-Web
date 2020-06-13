@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Src/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Summoners war guide</title>
+</head>
+
+<body class="backgroundcolor">
+
+    <header>
+        <h1>Summoners war guide</h1>
+    </header>
+
+    <div id="navbar">
+
+        <nav class="content_tuto">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+
+                <li><a>Monstres</a>
+                    <ul>
+                        <li><a href="SRC/Eau.html">Eau</a></li>
+                        <li><a href="SRC/Feu.html">Feu</a></li>
+                        <li><a href="SRC/Vent.html">Vent</a></li>
+                        <li><a href="SRC/Lumiere.html">Lumiere</a></li>
+                        <li><a href="SRC/Tenebre.html">Tenebre</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a class="active">Stratégie</a></li>
+                <li><a href="A vous de jouer.html">A vous de jouer !</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+ </body>
+
+
+
+
+ </html>

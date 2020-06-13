@@ -125,6 +125,56 @@ nav li ul li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.milieu {
+    background-color: rgb(238, 201, 120);
+    background-size: cover;
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.back{
+
+    margin:0;
+  padding:0;
+  background: url(../image/sw.png) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+
+
+}
+
+.button {
+	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	width:100px;
+	border:1px solid #ccc;
+}
+
+.buton{
+
+    padding: 5px;
+	font:bold 20px Arial;
+	background:#2a2a41;
+	color:rgb(255, 254, 249);
+	border-radius:2px;
+	width:15%;
+	border:2px solid #ccc;
+
+}
+
+.buton:hover{
+
+    cursor: pointer;
+    color: rgb(129, 129, 144);;
+}
 
 /*===== MENU =====*/
 
