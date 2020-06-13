@@ -23,6 +23,7 @@ nav li {
     text-align: center;
     background-color: rgb(124, 78, 19);
     box-shadow: 0px 5px 0px rgb(31, 29, 29), 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
+    z-index: 1;
     /*box-shadow: 0px 0px 5px 2px #BDBDBD;*/
 }
 
@@ -77,9 +78,11 @@ nav li ul li a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .sticky+.content {
+    z-index: 1;
     padding-top: 60px;
 }
 
@@ -135,6 +138,7 @@ nav li ul li a {
     margin-top: 100px;
     margin-bottom: 60px;
     padding: 10px;
+    
 }
 
 .back{
@@ -161,7 +165,7 @@ nav li ul li a {
 .buton{
 
     padding: 5px;
-	font:bold 20px Arial;
+    
 	background:#2a2a41;
 	color:rgb(255, 254, 249);
 	border-radius:2px;
@@ -174,6 +178,18 @@ nav li ul li a {
 
     cursor: pointer;
     color: rgb(129, 129, 144);;
+}
+
+.ingenieur1 img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.ingenieur1:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /*===== MENU =====*/
