@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Src/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Summoners war guide</title>
+</head>
+
+<body class="back">
+
+    <header>
+        <h1 style="color: rgb(255, 255, 255);">Summoners war guide</h1>
+    </header>
+
+    <div id="navbar">
+
+        <nav class="content_tuto">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+
+                <li><a>Monstres</a>
+                    <ul>
+                        <li><a href="SRC/Eau.html">Eau</a></li>
+                        <li><a href="SRC/Feu.html">Feu</a></li>
+                        <li><a href="SRC/Vent.html">Vent</a></li>
+                        <li><a href="SRC/Lumiere.html">Lumiere</a></li>
+                        <li><a href="SRC/Tenebre.html">Tenebre</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a>Stratégie</a>
+
+                    <ul>
+                        <li><a href="SRC/page_strat/evolution.html">Evolution</a></li>
+                        <li><a href="SRC/page_strat/runes.html">Runes</a></li>
+                        <li><a href="SRC/page_strat/cairos.html">Cairos</a></li>
+                        <li><a href="SRC/page_strat/toa.html">TOA/TOAH</a></li>
+                        <li><a href="SRC/page_strat/raid.html">Raid</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a class="active">Quizz</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="milieu">
+
+        <h3>Etes vous sûrs bien de connaître l'univers de Summoners War ? <em><br>Voici un petit quizz pour le vérifier</em> </h3><br><br>
+
+
+        <h3>1) Quel type de jeu correspond à Summoners War ?</h3>
+
+        <form name="QCM">
+            <input type="radio" name="choix" value="choix1" />Die and Retry
+            <input type="radio" name="choix" value="choix2" />Gestion
+            <input type="radio" name="choix" value="choix3" />RPG
+
+
+
+            <h3>2) Sur quel support pouvez-vous accéder à Summoners War ?</h3>
+
+            <input type="radio" name="choix1" value="choix4" />Téléphone
+            <input type="radio" name="choix1" value="choix5" />Console
+            <input type="radio" name="choix1" value="choix6" />PC
+
+
+
+            <h3>3)Le contenu de Summoners War est : </h3>
+
+            <input type="radio" name="choix2" value="choix7" />PvP
+            <input type="radio" name="choix2" value="choix8" />PVE
+            <input type="radio" name="choix2" value="choix9" />Les deux
+
+
+
+            <h3>4) Woosa est un monstre de type : </h3>
+
+            <input type="radio" name="choix3" value="choix10" />Vent
+            <input type="radio" name="choix3" value="choix11" />Eau
+            <input type="radio" name="choix3" value="choix12" />Tenebre
+
+
+
+            <h3>5) Perna est un monstre de type : </h3>
+
+            <input type="radio" name="choix4" value="choix13" />Feu
+            <input type="radio" name="choix4" value="choix14" />Lumiere
+            <input type="radio" name="choix4" value="choix15" />Vent
+
+            <h3>6) Pontos est un monstre de type :</h3>
+
+            <input type="radio" name="choix5" value="choix16" />Lumiere
+            <input type="radio" name="choix5" value="choix17" />Tenebre
+            <input type="radio" name="choix5" value="choix18" />Feu
+
+            <h3>7)Quelle est le nom de la région ou est implémenté la eme génération 6? :</h3>
+
+            <input type="radio" name="choix6" value="choix19" />Kalos
+            <input type="radio" name="choix6" value="choix20" />Unis
+            <input type="radio" name="choix6" value="choix21" />Sinnoh
+
+            <h3>8)Comment fais-t-on pour avoir un Milobellus ? :</h3>
+
+            <input type="radio" name="choix7" value="choix22" />Une évolution simple
+            <input type="radio" name="choix7" value="choix23" />En échangeant Barpaud(portant une Bel'Écaille)
+            <input type="radio" name="choix7" value="choix24" />En faisant monter la beauté de Barpaud puis l'évoluer
+
+
+            <br><br><br><input type="button" class="button" value="Valider" onclick="tester(this.form.choix7,this.form.choix6,this.form.choix5,this.form.choix4, this.form.choix3, this.form.choix2, this.form.choix1, this.form.choix)" />
+        </form>
+
+        </br>
+
+        <div>Correction :</div>
+        <div id="text"></div>
+
+        <script type="text/javaScript">
+
+
+
+
+              
+        function modifierText(texte)
+        {
+            document.getElementById("text").innerHTML = texte; 
+        }
+        function ajouterText(texte)
+        {
+            document.getElementById("text").innerHTML += texte; 
+        }
+        
+        function tester(reponse8,reponse7,reponse6,reponse5, reponse4, reponse3, reponse2 , reponse)
+        {
+            if (reponse8[1].checked && reponse7[0].checked && reponse6[0].checked && reponse5[0].checked && reponse4[1].checked && reponse3[2].checked && reponse2[0].checked && reponse[2].checked)
+            {	
+                modifierText("REPONSES TOUS CORRECTES ! ");
+            } else {
+                modifierText("Mauvaise(s) réponse(s): ");
+                if (!reponse[2].checked ) {
+                    ajouterText("<br>Q1:Summoners War est jeu de type RPG");
+                }
+                if (!reponse2[0].checked) {
+                    ajouterText("<br>Q2:Summoners War se joue sur téléphone");
+                }
+                if (!reponse3[2].checked) {
+                    ajouterText("<br>Q3:C'est bien sur un jeu PVP mais aussi PVE");
+                }
+                if (!reponse4[1].checked) {
+                    ajouterText("<br>Q4:Woosa est un monstre de type EAU");
+                }
+                if (!reponse5[0].checked) {
+                    ajouterText("<br>Q5:Perna est un monstre de type feu");
+                }
+                if (!reponse6[0].checked) {
+                    ajouterText("<br>Q6:Notre ami Pontos est bien sur un monstre de type Lumiere");
+                }
+                if (!reponse7[0].checked) {
+                    ajouterText("<br>Q7: C'est bien sur Kalos et qui plus est, s'inspire de la France");
+                }
+                if (!reponse8[1].checked) {
+                    ajouterText("<br>Q8: Depuis la cinquième génération il est seulement possible de l'évoluer grace à l'échange");
+                }
+               
+            }
+            return false;
+        }
+
+
+
+
+
+
+        </script>
+
+
+
+    </div>
+
+    <footer class="footer"> <input type="button" class="buton" value="Nous" onClick="javascript:document.location.href='Nous.html'" /></footer>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>
