@@ -8,7 +8,7 @@
     <title>Summoners war guide</title>
 </head>
 
-<body class="backgroundcolor">
+<body class="backgroundcolor" onload=" showarthur() ;showcedric() ;showadrien() " >
 
     <header>
         <h1>Summoners war guide</h1>
@@ -38,11 +38,83 @@
         </nav>
     </div>
 
-
+    <div class="boxtitre">
+        <h2 >
+            Qui sommes-nous ?</br>
+            </br>
+            Ce projet a été réalisé par les personnes suivantes :
+            
+        </h2>
+    </br>
 
     
-    
 
+        
+        
+
+
+    </div>
+    <div class=" nousflex ">
+
+        <div class="boxequipe ">
+
+            <div id="photo">
+            <p>Arthur Le Negaret</p>
+            </br>
+            <img class="photo " src="../Projet Web/image/Arthur.png">
+        </div>
+
+        <div id="box"class="box">
+            <p>Box Arthur Le Negaret</p>
+            </br>
+            <img class="photo5 " src="../Projet Web/image/box arthur.png">
+        </div>
+
+        
+
+        </div>
+
+        <div class="boxequipe ">
+
+            <div id="photo1">
+            <p>Cédric Calpotura</p>
+            </br>
+            <img class="photo2 " src="../Projet Web/image/cedric.png">
+        </div>
+
+            <div id="box1" class="box">
+                <p>Box Cédric Calpotura</p>
+                </br>
+                <img class="photo5 " src="../Projet Web/image/box cedric.png">
+            </div>
+
+        </div>
+        <div class="boxequipe">
+            
+            <div id="photo3">
+            <p>Adrien Kerezovic</p>
+            </br>
+            <img class="photo " src="../Projet Web/image/adrien.png">
+        </div>
+
+            <div id="box3" class="box">
+                <p>Box Adrien Kerezovic</p>
+                </br>
+                <img class="photo5 " src="../Projet Web/image/box adrien.png">
+            </div>
+
+        </div>
+
+    </div>
+</br></br></br>
+</br></br></br>
+    <nav id="navi">
+        <a href=javascript:void(0); onclick="showarthur() ;showcedric() ;showadrien() ">Nous</a>
+        <a href=javascript:void(0); onclick="showBox_ar() ;showBox_c() ;showBox_ad()">Nos Box</a>
+
+    </nav>
+
+</br></br></br>
 
 
     <script>
@@ -50,21 +122,149 @@
             myFunction()
         };
 
-        var navbar = document.getElementById("navbar");
+        var navbar = document.getElementById(" navbar ");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+                navbar.classList.add("sticky ")
             } else {
-                navbar.classList.remove("sticky");
+                navbar.classList.remove("sticky ");
             }
         }
+
+
+        function showarthur() {
+            document.getElementById("box").style.display = "none"; 
+            document.getElementById("photo").style.display = "block";
+        }
+
+        function showBox_ar() {
+            document.getElementById("photo").style.display = "none";
+            document.getElementById("box").style.display = "block" ;
+        }
+
+        function showcedric() {
+            document.getElementById("box1").style.display = "none"; 
+            document.getElementById("photo1").style.display = "block";
+        }
+
+        function showBox_c() {
+            document.getElementById("photo1").style.display = "none";
+            document.getElementById("box1").style.display = "block" ;
+        }
+
+
+        function showadrien() {
+            document.getElementById("box3").style.display = "none"; 
+            document.getElementById("photo3").style.display = "block";
+        }
+
+        function showBox_ad() {
+            document.getElementById("photo3").style.display = "none";
+            document.getElementById("box3").style.display = "block" ;
+        }
+
+       
+
+        
     </script>
 
 
- </body>
+</body>
 
+
+
+<style>
+    .nousflex {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    
+    .boxtitre {
+       text-align: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        color: rgb(170, 167, 167);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .boxequipe {
+        background-color: rgb(38, 41, 68);
+        color: lightgray;
+        margin-left: 2.8%;
+        margin-right: 2%;
+        margin-top: 3%;
+        padding-top: 2%;
+        text-align: center;
+        height: 400px;
+        width: 28%;
+       
+        font-size: 17pt;
+    }
+    
+    .photo {
+        text-align: center;
+        width: 200px;
+        height: 250px;
+        border: 2px solid white;
+    }
+    
+    .photo2 {
+        text-align: center;
+        width:300px;
+        height: 250px;
+        border: 2px solid white;
+    }
+    .photo5 {
+
+        text-align: center;
+        width:100%;
+        height: 300px;
+    }
+
+    #navi {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #navi a {
+      
+    background:#2a2a41;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  
+
+  #navi a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  }
+
+.box img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.box:hover img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+</style>
 
 
 
