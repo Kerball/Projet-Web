@@ -4,6 +4,12 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(153, 96, 42);
+    text-align: center;
+}
+
 nav ul {
     margin-top: 0;
     width: fit-content;
@@ -126,6 +132,17 @@ nav li ul li a {
     font-size: 20pt;
     color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titrepage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2%;
+    font-size: 20pt;
+    text-align: center;
 }
 
 .milieu {
