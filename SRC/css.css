@@ -129,15 +129,19 @@ nav li ul li a {
 }
 
 .milieu {
-    background-color: rgb(238, 201, 120);
+    background-color: rgb(43, 51, 78);
     background-size: cover;
     width: 1000px;
-    height: 1000px;
+    height: 1300px;
     text-align: center;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 60px;
-    padding: 10px;
+    padding: 50px;
+    border-radius: 10%;
+    color: rgb(156, 131, 131);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
     
 }
 
@@ -145,7 +149,7 @@ nav li ul li a {
 
     margin:0;
   padding:0;
-  background: url(../image/sw.png) no-repeat center fixed; 
+  background: url(../image/homon.png) no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
 
@@ -153,8 +157,8 @@ nav li ul li a {
 }
 
 .button {
-	padding:6px 0 6px 0;
-	font:bold 13px Arial;
+	padding:15px 0 15px 0;
+	font:bold 16px Arial;
 	background:#f5f5f5;
 	color:#555;
 	border-radius:2px;

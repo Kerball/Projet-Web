@@ -41,53 +41,53 @@
 
     <div class="milieu">
 
-        <h3>Etes vous sûrs bien de connaître l'univers de Pokémon ? <em><br>VERIFIEZ CELA AVEC NOTRE QCM CI-DESSOUS !! :) </em> </h3>
+        <h3>Etes vous sûrs bien de connaître l'univers de Summoners War ? <em><br>Voici un petit quizz pour le vérifier</em> </h3><br><br>
 
 
-        <h3>1) </h3>
+        <h3>1) Quel type de jeu correspond à Summoners War ?</h3>
 
         <form name="QCM">
-            <input type="radio" name="choix" value="choix1" />Pierre
-            <input type="radio" name="choix" value="choix2" />Sacha
-            <input type="radio" name="choix" value="choix3" />Ondin
+            <input type="radio" name="choix" value="choix1" />Die and Retry
+            <input type="radio" name="choix" value="choix2" />Gestion
+            <input type="radio" name="choix" value="choix3" />RPG
 
 
 
-            <h3>2) Qui est l'équipe ennemie de Pokémon ? :</h3>
+            <h3>2) Sur quel support pouvez-vous accéder à Summoners War ?</h3>
 
-            <input type="radio" name="choix1" value="choix4" />Team Rocket
-            <input type="radio" name="choix1" value="choix5" />La ligue Indingo
-            <input type="radio" name="choix1" value="choix6" />Gryffondor
-
-
-
-            <h3>3) Combien d'espèces existent-t-ils chez les Pokémons ? :</h3>
-
-            <input type="radio" name="choix2" value="choix7" />819
-            <input type="radio" name="choix2" value="choix8" />879
-            <input type="radio" name="choix2" value="choix9" />850
+            <input type="radio" name="choix1" value="choix4" />Téléphone
+            <input type="radio" name="choix1" value="choix5" />Console
+            <input type="radio" name="choix1" value="choix6" />PC
 
 
 
-            <h3>4) Combien d'exemplaires pour les versions bleues et jaunes du jeu-vidéo Pokémon ont été vendus ? :</h3>
+            <h3>3)Le contenu de Summoners War est : </h3>
 
-            <input type="radio" name="choix3" value="choix10" />12 000 000
-            <input type="radio" name="choix3" value="choix11" />870 060
-            <input type="radio" name="choix3" value="choix12" />31 000 000
+            <input type="radio" name="choix2" value="choix7" />PvP
+            <input type="radio" name="choix2" value="choix8" />PVE
+            <input type="radio" name="choix2" value="choix9" />Les deux
 
 
 
-            <h3>5) Dans quelle saison Sacha était-il accompagné par Serena, Lem et Clem ? :</h3>
+            <h3>4) Woosa est un monstre de type : </h3>
 
-            <input type="radio" name="choix4" value="choix13" />Saison 6
-            <input type="radio" name="choix4" value="choix14" />Saison 17
-            <input type="radio" name="choix4" value="choix15" />Saison 22
+            <input type="radio" name="choix3" value="choix10" />Vent
+            <input type="radio" name="choix3" value="choix11" />Eau
+            <input type="radio" name="choix3" value="choix12" />Tenebre
 
-            <h3>6) De combien de %, l'action de NINTENDO a-t-elle augmenté grace à Pokemon GO ? :</h3>
 
-            <input type="radio" name="choix5" value="choix16" />88.9
-            <input type="radio" name="choix5" value="choix17" />91.7
-            <input type="radio" name="choix5" value="choix18" />93.2
+
+            <h3>5) Perna est un monstre de type : </h3>
+
+            <input type="radio" name="choix4" value="choix13" />Feu
+            <input type="radio" name="choix4" value="choix14" />Lumiere
+            <input type="radio" name="choix4" value="choix15" />Vent
+
+            <h3>6) Pontos est un monstre de type :</h3>
+
+            <input type="radio" name="choix5" value="choix16" />Lumiere
+            <input type="radio" name="choix5" value="choix17" />Tenebre
+            <input type="radio" name="choix5" value="choix18" />Feu
 
             <h3>7)Quelle est le nom de la région ou est implémenté la eme génération 6? :</h3>
 
@@ -102,7 +102,7 @@
             <input type="radio" name="choix7" value="choix24" />En faisant monter la beauté de Barpaud puis l'évoluer
 
 
-            <br><br><input type="button" class="button" value="Valider" onclick="tester(this.form.choix7,this.form.choix6,this.form.choix5,this.form.choix4, this.form.choix3, this.form.choix2, this.form.choix1, this.form.choix)" />
+            <br><br><br><input type="button" class="button" value="Valider" onclick="tester(this.form.choix7,this.form.choix6,this.form.choix5,this.form.choix4, this.form.choix3, this.form.choix2, this.form.choix1, this.form.choix)" />
         </form>
 
     </br>
@@ -114,39 +114,39 @@
         
         
         
-        function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+        function modifierText(texte)
         {
-            document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+            document.getElementById("text").innerHTML = texte; 
         }
-        function ajouterText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+        function ajouterText(texte)
         {
-            document.getElementById("text").innerHTML += texte; // "text" étant l'id te ta balise qui contient le texte.
+            document.getElementById("text").innerHTML += texte; 
         }
         
-        function tester(reponse8,reponse7,reponse6,reponse5, reponse4, reponse3, reponse2 , reponse)// une fonction que l'on appellera pour tester le formulaire
+        function tester(reponse8,reponse7,reponse6,reponse5, reponse4, reponse3, reponse2 , reponse)
         {
-            if (reponse8[1].checked && reponse7[0].checked && reponse6[2].checked && reponse5[1].checked && reponse4[2].checked && reponse3[0].checked && reponse2[0].checked && reponse[1].checked)
+            if (reponse8[1].checked && reponse7[0].checked && reponse6[0].checked && reponse5[0].checked && reponse4[1].checked && reponse3[2].checked && reponse2[0].checked && reponse[2].checked)
             {	
                 modifierText("REPONSES TOUS CORRECTES ! ");
             } else {
                 modifierText("Mauvaise(s) réponse(s): ");
-                if (!reponse[1].checked ) {
-                    ajouterText("<br>Q1:Le dresseur de Pikachu est bien le célébre Sacha. ");
+                if (!reponse[2].checked ) {
+                    ajouterText("<br>Q1:Summoners War est jeu de type RPG");
                 }
                 if (!reponse2[0].checked) {
-                    ajouterText("<br>Q2:Les grands méchants des Pokémon est la Team Rocket. ");
+                    ajouterText("<br>Q2:Summoners War se joue sur téléphone");
                 }
-                if (!reponse3[0].checked) {
-                    ajouterText("<br>Q3:Il y a 819 espèces précisement chez les Pokémons ! ");
+                if (!reponse3[2].checked) {
+                    ajouterText("<br>Q3:C'est bien sur un jeu PVP mais aussi PVE");
                 }
-                if (!reponse4[2].checked) {
-                    ajouterText("<br>Q4:Le nombre d'exemplaires vendus est de... 31 000 000 !! ");
+                if (!reponse4[1].checked) {
+                    ajouterText("<br>Q4:Woosa est un monstre de type EAU");
                 }
-                if (!reponse5[1].checked) {
-                    ajouterText("<br>Q5:C'est dans la saison 17 que Sacha était accompagné par Serena, Lem et Clem ");
+                if (!reponse5[0].checked) {
+                    ajouterText("<br>Q5:Perna est un monstre de type feu");
                 }
-                if (!reponse6[2].checked) {
-                    ajouterText("<br>Q6:L'action de NINTENDO a augmenter à hauteur de 93.2% ");
+                if (!reponse6[0].checked) {
+                    ajouterText("<br>Q6:Notre ami Pontos est bien sur un monstre de type Lumiere");
                 }
                 if (!reponse7[0].checked) {
                     ajouterText("<br>Q7: C'est bien sur Kalos et qui plus est, s'inspire de la France");
@@ -154,7 +154,7 @@
                 if (!reponse8[1].checked) {
                     ajouterText("<br>Q8: Depuis la cinquième génération il est seulement possible de l'évoluer grace à l'échange");
                 }
-                /*modifierText("Mauvaise(s) réponse(s): Le dresseur de Pikachu est bien le célébre Sacha. Les grands méchants des Pokémon est la Team Rocket.");*/
+               
             }
             return false;
         }
