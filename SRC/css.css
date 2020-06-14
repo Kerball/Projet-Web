@@ -167,6 +167,11 @@ nav li ul li a {
     height: 100%;
 }
 
+.runage {
+    height: 800px;
+    width: 1200px;
+}
+
 .milieu {
     background-color: rgb(43, 51, 78);
     background-size: cover;
