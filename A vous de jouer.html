@@ -100,17 +100,17 @@
             <input type="radio" name="choix5" value="choix17" />Tenebre
             <input type="radio" name="choix5" value="choix18" />Feu
 
-            <h3>7)Quelle est le nom de la région ou est implémenté la eme génération 6? :</h3>
+            <h3>7) Comment s'appelle les 3 principaux Donjon de Cairos ?</h3>
 
-            <input type="radio" name="choix6" value="choix19" />Kalos
-            <input type="radio" name="choix6" value="choix20" />Unis
-            <input type="radio" name="choix6" value="choix21" />Sinnoh
+            <input type="radio" name="choix6" value="choix19" />Nexus, Inhibiteur, Minions
+            <input type="radio" name="choix6" value="choix20" />Géant, Dragon, Necropolis
+            <input type="radio" name="choix6" value="choix21" />N'Zoth, Il'gynoth, D.A.M.E 
 
-            <h3>8)Comment fais-t-on pour avoir un Milobellus ? :</h3>
+            <h3>8) Combien d'étages le Tribunal de l'ascension possède-t-il ?</h3>
 
-            <input type="radio" name="choix7" value="choix22" />Une évolution simple
-            <input type="radio" name="choix7" value="choix23" />En échangeant Barpaud(portant une Bel'Écaille)
-            <input type="radio" name="choix7" value="choix24" />En faisant monter la beauté de Barpaud puis l'évoluer
+            <input type="radio" name="choix7" value="choix22" />70
+            <input type="radio" name="choix7" value="choix23" />85
+            <input type="radio" name="choix7" value="choix24" />100
 
 
             <br><br><br><input type="button" class="button" value="Valider" onclick="tester(this.form.choix7,this.form.choix6,this.form.choix5,this.form.choix4, this.form.choix3, this.form.choix2, this.form.choix1, this.form.choix)" />
@@ -138,9 +138,9 @@
         
         function tester(reponse8,reponse7,reponse6,reponse5, reponse4, reponse3, reponse2 , reponse)
         {
-            if (reponse8[1].checked && reponse7[0].checked && reponse6[0].checked && reponse5[0].checked && reponse4[1].checked && reponse3[2].checked && reponse2[0].checked && reponse[2].checked)
+            if (reponse8[2].checked && reponse7[1].checked && reponse6[0].checked && reponse5[0].checked && reponse4[1].checked && reponse3[2].checked && reponse2[0].checked && reponse[2].checked)
             {	
-                modifierText("REPONSES TOUS CORRECTES ! ");
+                modifierText("REPONSES TOUTES CORRECTES ! ");
             } else {
                 modifierText("Mauvaise(s) réponse(s): ");
                 if (!reponse[2].checked ) {
@@ -161,11 +161,11 @@
                 if (!reponse6[0].checked) {
                     ajouterText("<br>Q6:Notre ami Pontos est bien sur un monstre de type Lumiere");
                 }
-                if (!reponse7[0].checked) {
-                    ajouterText("<br>Q7: C'est bien sur Kalos et qui plus est, s'inspire de la France");
+                if (!reponse7[1].checked) {
+                    ajouterText("<br>Q7: Mais bien sur les donjons de Cairos sont le Geant, le Dragon et enfin le Necropolis");
                 }
-                if (!reponse8[1].checked) {
-                    ajouterText("<br>Q8: Depuis la cinquième génération il est seulement possible de l'évoluer grace à l'échange");
+                if (!reponse8[2].checked) {
+                    ajouterText("<br>Q8: Il faut suivre mon cher ami, la TOA possède 100 étages");
                 }
                
             }
