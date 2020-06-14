@@ -8,7 +8,7 @@
     <title>Summoners war guide</title>
 </head>
 
-<body class="backgroundcolor" onload=" showarthur() ;showcedric() ;showadrien() " >
+<body class="backgroundcolor" onload=" showarthur() ;showcedric() ;showadrien() ">
 
     <header>
         <h1>Summoners war guide</h1>
@@ -32,25 +32,36 @@
                     </ul>
                 </li>
 
-                <li><a href="Stratégie.html">Stratégie</a></li>
+                <li><a>Stratégie</a>
+
+                    <ul>
+                        <li><a href="../Projet-Web/SRC/page_strat/evolution.html">Evolution</a></li>
+                        <li><a href="../Projet-Web/SRC/page_strat/runes.html">Runes</a></li>
+                        <li><a href="../Projet-Web/SRC/page_strat/cairos.html">Cairos</a></li>
+                        <li><a href="../Projet-Web/SRC/page_strat/toa.html">TOA/TOAH</a></li>
+                        <li><a href="../Projet-Web/SRC/page_strat/raid.html">Raid</a></li>
+
+                    </ul>
+
+                </li>
                 <li><a href="A vous de jouer.html">Quizz</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="boxtitre">
-        <h2 >
+        <h2>
             Qui sommes-nous ?</br>
             </br>
             Ce projet a été réalisé par les personnes suivantes :
-            
+
         </h2>
-    </br>
+        </br>
 
-    
 
-        
-        
+
+
+
 
 
     </div>
@@ -59,62 +70,68 @@
         <div class="boxequipe ">
 
             <div id="photo">
-            <p>Arthur Le Negaret</p>
-            </br>
-            <img class="photo " src="../Projet Web/image/Arthur.png">
-        </div>
+                <p>Arthur Le Negaret</p>
+                </br>
+                <img class="photo " src="../Projet-Web/image/Arthur.png ">
+            </div>
 
-        <div id="box"class="box">
-            <p>Box Arthur Le Negaret</p>
-            </br>
-            <img class="photo5 " src="../Projet Web/image/box arthur.png">
-        </div>
+            <div id="box" class="box">
+                <p>Box Arthur Le Negaret</p>
+                </br>
+                <img class="photo6 " src="../Projet-Web/image/box arthur.png">
+            </div>
 
-        
+
 
         </div>
 
         <div class="boxequipe ">
 
             <div id="photo1">
-            <p>Cédric Calpotura</p>
-            </br>
-            <img class="photo2 " src="../Projet Web/image/cedric.png">
-        </div>
+                <p>Cédric Calpotura</p>
+                </br>
+                <img class="photo2 " src="../Projet-Web/image/cedric.png">
+            </div>
 
             <div id="box1" class="box">
                 <p>Box Cédric Calpotura</p>
                 </br>
-                <img class="photo5 " src="../Projet Web/image/box cedric.png">
+                <img class="photo6 " src="../Projet-Web/image/box cedric.png">
             </div>
 
         </div>
         <div class="boxequipe">
-            
+
             <div id="photo3">
-            <p>Adrien Kerezovic</p>
-            </br>
-            <img class="photo " src="../Projet Web/image/adrien.png">
-        </div>
+                <p>Adrien Kerezovic</p>
+                </br>
+                <img class="photo " src="../Projet-Web/image/adrien.png">
+            </div>
 
             <div id="box3" class="box">
                 <p>Box Adrien Kerezovic</p>
                 </br>
-                <img class="photo5 " src="../Projet Web/image/box adrien.png">
+                <img class="photo5 " src="../Projet-Web/image/box adrien.png">
             </div>
 
         </div>
 
     </div>
-</br></br></br>
-</br></br></br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
     <nav id="navi">
         <a href=javascript:void(0); onclick="showarthur() ;showcedric() ;showadrien() ">Nous</a>
         <a href=javascript:void(0); onclick="showBox_ar() ;showBox_c() ;showBox_ad()">Nos Box</a>
 
     </nav>
 
-</br></br></br>
+    </br>
+    </br>
+    </br>
 
 
     <script>
@@ -135,39 +152,35 @@
 
 
         function showarthur() {
-            document.getElementById("box").style.display = "none"; 
+            document.getElementById("box").style.display = "none";
             document.getElementById("photo").style.display = "block";
         }
 
         function showBox_ar() {
             document.getElementById("photo").style.display = "none";
-            document.getElementById("box").style.display = "block" ;
+            document.getElementById("box").style.display = "block";
         }
 
         function showcedric() {
-            document.getElementById("box1").style.display = "none"; 
+            document.getElementById("box1").style.display = "none";
             document.getElementById("photo1").style.display = "block";
         }
 
         function showBox_c() {
             document.getElementById("photo1").style.display = "none";
-            document.getElementById("box1").style.display = "block" ;
+            document.getElementById("box1").style.display = "block";
         }
 
 
         function showadrien() {
-            document.getElementById("box3").style.display = "none"; 
+            document.getElementById("box3").style.display = "none";
             document.getElementById("photo3").style.display = "block";
         }
 
         function showBox_ad() {
             document.getElementById("photo3").style.display = "none";
-            document.getElementById("box3").style.display = "block" ;
+            document.getElementById("box3").style.display = "block";
         }
-
-       
-
-        
     </script>
 
 
@@ -181,11 +194,10 @@
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
-        
     }
     
     .boxtitre {
-       text-align: center;
+        text-align: center;
         margin-top: 10%;
         margin-bottom: 5%;
         color: rgb(170, 167, 167);
@@ -202,7 +214,6 @@
         text-align: center;
         height: 400px;
         width: 28%;
-       
         font-size: 17pt;
     }
     
@@ -215,57 +226,59 @@
     
     .photo2 {
         text-align: center;
-        width:300px;
+        width: 300px;
         height: 250px;
         border: 2px solid white;
     }
+    
     .photo5 {
-
         text-align: center;
-        width:100%;
+        width: 100%;
         height: 300px;
     }
-
-    #navi {
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  #navi a {
-      
-    background:#2a2a41;
-    color: #ffffff;
-    text-align: center;
-    padding: 30px 35px;
-    text-decoration: none;
-    font-size: 20px;
-    width: 100px;
-    height: 100px;
     
-  }
-
-  
-
-  #navi a:hover {
-    background-color: #ddd;
-    color: black;
-    cursor: pointer;
-  }
-
-.box img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.box:hover img {
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
-}
+    .photo6 {
+        text-align: center;
+        width: 100%;
+        height: 250px;
+    }
+    
+    #navi {
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    #navi a {
+        background: #2a2a41;
+        color: #ffffff;
+        text-align: center;
+        padding: 30px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    #navi a:hover {
+        background-color: #ddd;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .box img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    
+    .box:hover img {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
 </style>
 
 
 
- </html>
+</html>

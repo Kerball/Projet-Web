@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Summoners war guide</title>
+</head>
+
+<body class="backgroundcolor">
+
+    <header>
+        <h1>Summoners war guide</h1>
+    </header>
+
+    <div id="navbar">
+
+        <nav class="content_tuto">
+            <ul>
+                <li><a href="../../accueil.html">Accueil</a></li>
+
+                <li><a>Monstres</a>
+                    <ul>
+                        <li><a href="../Eau.html">Eau</a></li>
+                        <li><a href="../Feu.html">Feu</a></li>
+                        <li><a href="../Vent.html">Vent</a></li>
+                        <li><a href="../Lumiere.html">Lumiere</a></li>
+                        <li><a href="../Tenebre.html">Tenebre</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a class="active">Stratégie</a>
+
+                    <ul>
+                        <li><a href="evolution.html">Evolution</a></li>
+                        <li><a href="runes.html">Runes</a></li>
+                        <li><a href="cairos.html">Cairos</a></li>
+                        <li><a href="toa.html">TOA/TOAH</a></li>
+                        <li><a class="active">Raid</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="../../A vous de jouer.html">Quizz</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <footer class="footer"> <input type="button" class="buton" value="Nous" onClick="javascript:document.location.href='../../Nous.html'" /></footer>
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
